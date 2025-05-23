@@ -134,6 +134,32 @@ class MainActivity : AppCompatActivity() {
                 .setPositiveButton("OK", null)
                 .show()
         }
+
+        // Show progress summary
+        val summaryText = findViewById<TextView>(R.id.summaryText)
+        val totalDays = daysSinceStart
+        val streak = prefs.getInt("streak", 0)
+        val cigsPerDay = prefs.getInt("cigsPerDay", 0)
+        val pricePerCig = prefs.getFloat("pricePerCig", 0f)
+
+        val totalCigsAvoided = streak * cigsPerDay
+        val moneySaved = totalCigsAvoided * pricePerCig
+
+        summaryText.text = "Total Days Tracked: $totalDays\n" +
+                "Cigarettes Avoided: $totalCigsAvoided\n" +
+                "Money Saved: ${"%.2f".format(moneySaved)} 💰"
+
+        // badges and milestone intent
+
+        findViewById<Button>(R.id.viewMilestonesBtn).setOnClickListener {
+            startActivity(Intent(this, MilestoneActivity::class.java))
+        }
+
+        val intent = Intent(this, AnalyticsActivity::class.java)
+        startActivity(intent)
+
+
+
     }
 
     private fun saveDailyLog(date: String, smoked: Boolean, streak: Int, prefs: android.content.SharedPreferences) {

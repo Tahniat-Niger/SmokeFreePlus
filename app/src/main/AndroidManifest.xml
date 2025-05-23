@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmokeFreePlus"
         tools:targetApi="31">
+
+        <activity
+            android:name=".MilestoneActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:exported="false"/>
+
+        <activity android:name=".AnalyticsActivity" />
+
         <activity android:name=".OnboardingActivity" />
 
         <activity
