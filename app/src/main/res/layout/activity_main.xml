@@ -109,6 +109,16 @@
         android:backgroundTint="#009688"
         android:layout_marginTop="16dp" />
 
+    <!-- Analytics button -->
+    <Button
+        android:id="@+id/viewAnalyticsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Smoking Chart"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#009688"
+        android:layout_marginTop="12dp"/>
+
 
     <!-- for view log story -->
     <TextView

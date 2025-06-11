@@ -154,9 +154,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.viewMilestonesBtn).setOnClickListener {
             startActivity(Intent(this, MilestoneActivity::class.java))
         }
+        findViewById<Button>(R.id.viewAnalyticsBtn).setOnClickListener {
+            startActivity(Intent(this, AnalyticsActivity::class.java))
+        }
 
-        val intent = Intent(this, AnalyticsActivity::class.java)
-        startActivity(intent)
 
 
 

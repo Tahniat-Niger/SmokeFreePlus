@@ -18,7 +18,10 @@
             android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
             android:exported="false"/>
 
-        <activity android:name=".AnalyticsActivity" />
+        <activity
+            android:name=".AnalyticsActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:exported="false" />
 
         <activity android:name=".OnboardingActivity" />
 
