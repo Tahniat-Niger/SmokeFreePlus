@@ -15,9 +15,7 @@ A mobile health (mHealth) application designed to help users quit smoking by tra
 
 ---
 
-## 📱 Screenshots (optional)
-*(Add images of main screens here once available)*
-
+## 📱 Screenshots 
 ---
 
 ## 🛠️ Tech Stack
